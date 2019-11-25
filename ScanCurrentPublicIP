@@ -6,7 +6,7 @@ echo "
 Scanning for open ports on $IP...
 "
 echo
-nmap $IP >tmp.tmp
+nmap $IP > tmp.tmp
 awk 'NR > 4' tmp.tmp > tmp2.tmp
 head -n -2 tmp2.tmp > tmp.tmp
 cat tmp.tmp
